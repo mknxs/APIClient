@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol Response {
+    
+    func process(responseJson json: JsonHelper) -> Bool
+}
