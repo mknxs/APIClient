@@ -14,4 +14,5 @@ class KeyPaths {
  
     var loginId: String { return #function }
     var password: String { return #function }
+    var token: String { return #function }
 }
