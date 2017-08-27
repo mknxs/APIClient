@@ -13,6 +13,7 @@
 		70E06B521F525AD80011DFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E06B511F525AD80011DFA5 /* Assets.xcassets */; };
 		70E06B551F525AD80011DFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E06B531F525AD80011DFA5 /* LaunchScreen.storyboard */; };
 		70E06B601F525AD80011DFA5 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B5F1F525AD80011DFA5 /* APIClientTests.swift */; };
+		70E06B6C1F526D390011DFA5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B6B1F526D390011DFA5 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		70E06B5B1F525AD80011DFA5 /* APIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E06B5F1F525AD80011DFA5 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		70E06B611F525AD80011DFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E06B6B1F526D390011DFA5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		70E06B491F525AD80011DFA5 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				70E06B6A1F526D130011DFA5 /* Request */,
 				70E06B4A1F525AD80011DFA5 /* AppDelegate.swift */,
 				70E06B4C1F525AD80011DFA5 /* ViewController.swift */,
 				70E06B4E1F525AD80011DFA5 /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				70E06B611F525AD80011DFA5 /* Info.plist */,
 			);
 			path = APIClientTests;
+			sourceTree = "<group>";
+		};
+		70E06B6A1F526D130011DFA5 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				70E06B6B1F526D390011DFA5 /* Request.swift */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E06B6C1F526D390011DFA5 /* Request.swift in Sources */,
 				70E06B4D1F525AD80011DFA5 /* ViewController.swift in Sources */,
 				70E06B4B1F525AD80011DFA5 /* AppDelegate.swift in Sources */,
 			);
@@ -408,6 +420,7 @@
 				70E06B661F525AD80011DFA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70E06B671F525AD80011DFA5 /* Build configuration list for PBXNativeTarget "APIClientTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +429,7 @@
 				70E06B691F525AD80011DFA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
