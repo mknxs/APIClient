@@ -19,4 +19,9 @@ protocol Request {
      * リクエストパラメータを取得.
      */
     var parameters: Dictionary<String, Any> { get }
+    
+    /**
+     * APIの種別を取得
+     */
+    var kind: APIConstants.Kind { get }
 }

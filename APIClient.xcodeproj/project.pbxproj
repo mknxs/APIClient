@@ -24,6 +24,11 @@
 		70E06B7D1F52AC6B0011DFA5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B7C1F52AC6B0011DFA5 /* APIError.swift */; };
 		70E06B7F1F52ACDA0011DFA5 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B7E1F52ACDA0011DFA5 /* LoginResponse.swift */; };
 		70E06B811F52AD540011DFA5 /* LoginResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B801F52AD540011DFA5 /* LoginResponseTests.swift */; };
+		70E06B831F52AF7D0011DFA5 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B821F52AF7D0011DFA5 /* APIConstants.swift */; };
+		70E06B861F52B2B30011DFA5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E06B851F52B2B30011DFA5 /* Alamofire.framework */; };
+		70E06B881F52C20C0011DFA5 /* ResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06B871F52C20C0011DFA5 /* ResponseBase.swift */; };
+		70E06B891F52C2950011DFA5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E06B851F52B2B30011DFA5 /* Alamofire.framework */; };
+		70E06B8A1F52C2950011DFA5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70E06B851F52B2B30011DFA5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,20 @@
 			remoteInfo = APIClient;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70E06B8B1F52C2950011DFA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70E06B8A1F52C2950011DFA5 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		70E06B471F525AD80011DFA5 /* APIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +77,9 @@
 		70E06B7C1F52AC6B0011DFA5 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		70E06B7E1F52ACDA0011DFA5 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		70E06B801F52AD540011DFA5 /* LoginResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponseTests.swift; sourceTree = "<group>"; };
+		70E06B821F52AF7D0011DFA5 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		70E06B851F52B2B30011DFA5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		70E06B871F52C20C0011DFA5 /* ResponseBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E06B861F52B2B30011DFA5 /* Alamofire.framework in Frameworks */,
+				70E06B891F52C2950011DFA5 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +108,7 @@
 				70E06B491F525AD80011DFA5 /* APIClient */,
 				70E06B5E1F525AD80011DFA5 /* APIClientTests */,
 				70E06B481F525AD80011DFA5 /* Products */,
+				70E06B841F52B2B30011DFA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +136,7 @@
 				70E06B741F527B9F0011DFA5 /* KeyPaths.swift */,
 				70E06B781F527F680011DFA5 /* JsonHelper.swift */,
 				70E06B7C1F52AC6B0011DFA5 /* APIError.swift */,
+				70E06B821F52AF7D0011DFA5 /* APIConstants.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -141,8 +167,17 @@
 			children = (
 				70E06B721F5271450011DFA5 /* Response.swift */,
 				70E06B7E1F52ACDA0011DFA5 /* LoginResponse.swift */,
+				70E06B871F52C20C0011DFA5 /* ResponseBase.swift */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		70E06B841F52B2B30011DFA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70E06B851F52B2B30011DFA5 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +190,7 @@
 				70E06B431F525AD80011DFA5 /* Sources */,
 				70E06B441F525AD80011DFA5 /* Frameworks */,
 				70E06B451F525AD80011DFA5 /* Resources */,
+				70E06B8B1F52C2950011DFA5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E06B6C1F526D390011DFA5 /* Request.swift in Sources */,
+				70E06B831F52AF7D0011DFA5 /* APIConstants.swift in Sources */,
 				70E06B751F527B9F0011DFA5 /* KeyPaths.swift in Sources */,
+				70E06B881F52C20C0011DFA5 /* ResponseBase.swift in Sources */,
 				70E06B4D1F525AD80011DFA5 /* ViewController.swift in Sources */,
 				70E06B4B1F525AD80011DFA5 /* AppDelegate.swift in Sources */,
 				70E06B7F1F52ACDA0011DFA5 /* LoginResponse.swift in Sources */,
@@ -401,6 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = APIClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smakino.APIClient;
@@ -413,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = APIClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smakino.APIClient;

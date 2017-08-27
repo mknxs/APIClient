@@ -8,11 +8,11 @@
 
 import Foundation
 
-class LoginResponse: Response {
+class LoginResponse: ResponseBase {
     
     var token: String? = nil
     
-    func process(responseJson json: JsonHelper) -> Bool {
+    override func process(responseJson json: JsonHelper) -> Bool {
         let k = KeyPaths.shared
         if let token: String = json.value(for: k.token) {
             self.token = token

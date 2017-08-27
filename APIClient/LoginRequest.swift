@@ -28,4 +28,8 @@ class LoginRequest: Request {
         let k = KeyPaths.shared
         return [k.loginId: id, k.password: pass]
     }
+    
+    var kind: APIConstants.Kind {
+        return .login
+    }
 }
