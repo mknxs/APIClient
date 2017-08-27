@@ -13,7 +13,7 @@ protocol Request {
     /**
      * リクエストパラメータのバリデーション.
      */
-    func valiate() -> Bool
+    func validate() -> Bool
     
     /**
      * リクエストパラメータを取得.
